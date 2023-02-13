@@ -1,0 +1,146 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: buttonface;
+}
+
+h1{
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Buttons */
+
+#buttons-container{
+    margin-bottom: 20px;
+}
+
+#buttons-container button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid buttontext;
+}
+
+#buttons-container button:hover{
+    color: buttonface;
+    background-color: buttontext;
+    border: 1px solid buttonface;
+    transition: 500ms;
+}
+
+/* Game */
+
+#container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#square-1, #square-2, #square-3{
+    border-top: none;
+}
+
+#square-1, #square-4, #square-7{
+    border-left: none;
+}
+
+#square-7, #square-8, #square-9{
+    border-bottom: none;
+}
+
+#square-3, #square-6, #square-9{
+    border-right: none;
+}
+
+/* Symbols */
+
+.x{
+    font-size: 65px;
+    color: blue;
+    line-height: 100px;
+    display: inline-block;
+}
+
+.o{
+    height: 50px;
+    width: 50px;
+    border: 5px solid greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px; 
+}
+
+/* Hide elements */
+
+.hide{
+    display: none !important;
+}
+
+/* Scoreboard */
+
+#scoreboard-container{
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size:35px;
+    margin-bottom: 20px;
+}
+
+.score-box{
+    margin: 0 20px;
+}
+
+#x-scoreboard{
+    color: blue;
+    margin-right: 3px;
+}
+
+#o-scoreboard{
+    height: 20px;
+    width: 20px;
+    border: 3px solid greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 3px;
+}
+
+/* Message */
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: -170px;
+    margin-top: -380px;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+  }
